@@ -1,0 +1,46 @@
+{
+  "meta" : {
+    "name" : "Shiny golem config",
+    "version" : "0.0.1",
+    "description" : "An example of an app configured by a config file in the cloud",
+    "author" : "Discindo",
+    "email" : "hello@discindodata.com",
+    "logo" : "www/logo.png",
+    "favicon" : "favicon.ico",
+    "theme" : "default",
+    "language" : "en",
+    "homepage" : "discindo.org"
+  },
+  "general" : {
+    "title" : "Test Title",
+    "subtitle" : "A little longer subtitle just to show it (disable with NULL)",
+    "data_path" : "https://raw.githubusercontent.com/discindo/shiny-golem-json-config/refs/heads/main/iris.csv",
+    "data_format" : "csv"
+  },
+  "pages" : {
+   "home" : {
+        "title" : "Home",
+        "icon" : "home",
+        "url" : "/",
+        "template" : "inst/html/home.html",
+        "ui" : null,
+        "server" : null
+    },
+    "data" : {
+        "title" : "Data",
+        "icon" : "table",
+        "url" : "/data",
+        "template" : null,
+        "ui" : "mod_data_ui",
+        "server" : "mod_data_server"
+    },
+    "about" : {
+        "title" : "About",
+        "icon" : "info",
+        "url" : "/about",
+        "template" : "inst/html/about.html",
+        "ui" : null,
+        "server" : null
+    }
+  }
+}
